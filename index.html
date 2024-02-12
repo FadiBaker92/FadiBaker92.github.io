@@ -6,23 +6,41 @@
     <meta name="author" content="Fadi Baker">
     <style>
       body {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-color: #16161a;
+        display: flex;
+        justify-content: center;
+      
       }
       .name {
         color: #fffffe;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .social_icons {
+        display: flex;
+        justify-content: space-around;
       }
       .social_icons a {
         color: #2cb67d;
         text-decoration: none;
       }
-      .link {
+      .links {
         background-color: #7f5af0;
+        display: flex;
+        align-items: center;
       }
-      .link a {
-        color : #94a1b2;
+      .links a {
+        color :  #2cb67d;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
       .banner_image {
         width: 128px;
@@ -36,7 +54,15 @@
         border-radius: 48px;
         object-fit: cover;
       }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 700px;
+        flex-grow: 1;
+      }
     </style>
+  
   </head>
 
   <body>
@@ -45,10 +71,10 @@
         <img class="banner_image" src="/thumbnails/main_pic.jpg" alt="Fadi Baker's main image">
       </div>
       <div class="name">
-        Fadi Baker
+        <strong>Fadi Baker</strong>
       </div>
       <div class="social_icons">
-        <a href="https://www.linkedin.com/in/fadibaker92/" target="_blank"> linkedin</a>
+        <a href="https://www.linkedin.com/in/fadibaker92/" target="_blank"> Linkedin</a>
         <a href="https://github.com/FadiBaker92" target="_blank"> Github</a>
         <a href="https://www.facebook.com/fadi.h.bakeer/" target="_blank"> Facebook </a>
         <a href="https://www.instagram.com/fadi_bakeer/" target="_blank"> Instagram</a>
@@ -56,7 +82,7 @@
   
       <div class="links">
         <img class="thumbnail" src="/thumbnails/coding.jpg" alt="an image about coding">
-        <a href="https://rubyonrails.org/category/news" target="_blank">Ruby on rails news</a>
+        <a href="https://rubyonrails.org/category/news" target="_blank">Ruby on rails news and updates</a>
       </div>
   
       <div class="links">
@@ -81,5 +107,5 @@
     </div>
 
   </body>
-
+  
 </html>
